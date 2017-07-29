@@ -14,6 +14,9 @@
 </div>
 
 <script type="text/javascript">
+/**
+* calling the calander plugin.
+*/
 $(function(){
 	$("#example").calander(
 		{
@@ -21,17 +24,20 @@ $(function(){
 			month:05,
 			startingWOD:0,
 			eventData:[
-				/*{'date':'2016-06-19','title':'Event19', 'desc':'This is the event description'},
+				{'date':'2016-06-19','title':'Event19', 'desc':'This is the event description'},
 				{'date':'2016-06-20','title':'Event20', 'desc':'This is the event description'},
 				{'date':'2016-06-20','title':'Event20', 'desc':'This is the event description'},
 				{'date':'2016-06-20','title':'Event20', 'desc':'This is the event description'},
 				{'date':'2016-06-21','title':'Event21', 'desc':'This is the event description'},
-				{'date':'2017-01-01','title':'Event22', 'desc':'This is the event description'},*/
+				{'date':'2017-01-01','title':'Event22', 'desc':'This is the event description'},
 			]
 		}
 	);
 })
 
+/**
+* Call back funciton to handle the view,edit or delete
+**/
 function calHandleEditorDelete(element){
 	var data = $(element).data();
 	var html = '<form method="POST" onsubmit="return false;" id="cal-event-edit" name="cal-event-edit">';
@@ -50,6 +56,10 @@ function calHandleEditorDelete(element){
 	$('#event-cr').html(html).show();
 	
 }
+
+/**
+* Function returns the html input tag.
+*/
 function generateTextbox(el, value){
 		return '<input placeholder="Enter the \'"'+el+'\'" value="'+value+'" type="text" id="el" name="el"/>';
 	}
