@@ -1,0 +1,165 @@
+.mt-calander table{
+	width:100%;
+	height:100%;
+	text-align:center;
+	float: left;
+	border-collapse: collapse;
+}
+.mt-calander table, th, td {
+   border: 1px solid black;
+   vertical-align: top;
+   padding: 0px;
+   height:40px;
+}
+.mt-calander .cell{
+	width:5%;
+	min-width:10px;
+}
+.event-list{
+	display:none;
+}
+.event-cr{
+	display:none;
+	z-index:99999;
+	position:fixed;
+	width:100%;
+	height:100%;
+	opacity:0.8;
+	background-color: #DDD;
+	margin:0;
+
+}
+.small{
+	width:20% !important;
+	//float:left;
+	margin-left:10px !important;
+}
+.event-cr .event-cr-inner{
+	background-color:#464646;
+	position:fixed;
+	top:45%;
+	left:38%;
+	width:25%;
+	text-align:center;
+}
+.event-cr .event-cr-inner input{
+	width:90%;
+	padding:2%;
+	margin-bottom:8px;
+	color:#777;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #ddd inset;
+    box-sizing: border-box;
+}
+/*table.imagetable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.imagetable th {
+	background:#b5cfd2 url('../images/cell-blue.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+table.imagetable td {
+	background:#dcddc0 url('../images/cell-grey.jpg');
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}*/
+.mt-calander tr:nth-child(even) {
+	background-color: #dcddc0;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #999999;}
+.mt-calander td:hover {background-color: #e4e4e4}
+.mt-calander th {
+    background-color: #b5cfd2;
+    color: white;
+	border-style: solid;
+	border-color: #999999;
+}
+.mt-calander .today{
+	background-color:#CCC;
+}
+.mt-calander .calander-header {
+	float: left;
+    text-align: center;
+    width: 100%;
+	font-weight:bolder;
+	background-color:white;
+	color:black;
+	padding: 2% 0 2% 0;
+}
+
+.mt-calander .cal-navigation{
+	float: left;
+	width:70%;
+}
+.mt-calander .cal-toolbar{
+	float:left;
+	width:20%;
+}
+.mt-calander .cal-event-details{
+	font-weight:lighter;
+	font-size: 10px;
+	text-align:left;
+	padding-left:3%;
+}
+.mt-calander .cal-event-list{
+	border: 1px solid #ccc;
+	background-color: red;
+	padding: 1px 0 0 4px;
+	width: 45%;
+	min-width:35px;
+	float:left;
+	text-decoration:none;
+}
+/*
+.btn {
+    display: inline-block;
+    width: 25%;
+    height: 3%;
+    background: #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: green;
+    font-weight: bold;
+	text-decoration:none;
+	min-width:100px;
+	min-height:16px;
+	cursor:pointer;
+}*/
+.btn{
+	background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , rgba(252, 252, 252, 1) 0%, rgba(224, 224, 224, 1) 100%) repeat scroll 0 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #666;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+	left: 0;
+	line-height: 100%;
+	margin: 0;
+	overflow: visible;
+	padding: 10px 15px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	top: 0;
+	vertical-align: middle;
+	width: auto;
+}
+.btn:active {
+    border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+}
