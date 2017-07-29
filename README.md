@@ -4,7 +4,7 @@ This is an experimental project to develop and Event calander based on JQuery li
 
 
 Usage Example:
-
+```javascript
 <script type="text/javascript">
 /**
 * calling the calander plugin.
@@ -56,3 +56,4 @@ function generateTextbox(el, value){
 		return '<input placeholder="Enter the \'"'+el+'\'" value="'+value+'" type="text" id="el" name="el"/>';
 	}
 </script>
+```
